@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Día de la Novia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="botonMusica" class="botonMusica" type="button" aria-label="Reproducir música">
+      ▶ Reproducir música
+    </button>
+
+    <div id="entrada" class="pantallaEntrada">
+      <button id="botonHuella" class="huella" type="button" aria-label="Huella digital">
+        <div class="anillo"></div>
+        <div class="punto"></div>
+      </button>
+      <p id="mensajeEntrada" class="mensajeEntrada oculto">Detectando el amor de mi vida...</p>
+    </div>
+
+    <div id="escenaNegra" class="escenaNegra oculto">
+      <p id="mensajeSecreto" class="mensajeSecreto">✨ Hay algo que quiero mostrarte... ✨</p>
+    </div>
+
+    <div id="camaraJardin" class="camaraJardin oculto">
+      <div class="background" aria-hidden="true"></div>
+
+      <div class="lunas" aria-hidden="true">
+        <span class="luna luna-grande"></span>
+        <span class="luna luna-pequena"></span>
+      </div>
+
+      <div class="estrellasFugaces" aria-hidden="true">
+        <span class="estrellaFugaz estrella1"></span>
+        <span class="estrellaFugaz estrella2"></span>
+        <span class="estrellaFugaz estrella3"></span>
+      </div>
+
+      <div class="jardinSuelo" aria-hidden="true">
+        <span class="luciernaga" style="top:62%; left:18%; animation-delay:0.2s;">✦</span>
+        <span class="luciernaga" style="top:70%; left:30%; animation-delay:1.1s;">✦</span>
+        <span class="luciernaga" style="top:58%; left:75%; animation-delay:0.6s;">✦</span>
+        <span class="luciernaga" style="top:74%; left:85%; animation-delay:1.6s;">✦</span>
+      </div>
+
+      <div id="inicio" class="container oculto">
+        <h1>🌹 Para ti "Ale"❤️</h1>
+        <p class="pista">Toca una rosa para leer su mensaje 🌹</p>
+        <div class="flowers" id="flowers">
+          <button class="rose" type="button" data-index="1" style="--retraso: 0.05s" aria-label="Rosa 1"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="2" style="--retraso: 0.18s" aria-label="Rosa 2"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="3" style="--retraso: 0.31s" aria-label="Rosa 3"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="4" style="--retraso: 0.44s" aria-label="Rosa 4"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="5" style="--retraso: 0.57s" aria-label="Rosa 5"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="6" style="--retraso: 0.70s" aria-label="Rosa 6"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="7" style="--retraso: 0.83s" aria-label="Rosa 7"><span class="rosaEmoji">🌹</span></button>
+          <button class="rose" type="button" data-index="8" style="--retraso: 0.96s" aria-label="Rosa 8"><span class="rosaEmoji">🌹</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartaCompleta" class="pantallaCarta">
+      <div class="carta">
+        <button class="volver" onclick="cerrarCarta()">← Volver al jardín</button>
+        <h2>❤️ Para Ti ❤️</h2>
+        <p id="textoCarta"></p>
+      </div>
+    </div>
+
+    <audio id="musicaFondo" loop preload="auto">
+      <source src="musica/Sparkle Your Name AMV.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html
